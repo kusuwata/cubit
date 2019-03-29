@@ -9,7 +9,6 @@ This is a library that is the foundation for operating the product "Cubit" optim
 ## License
 
 
-
 ## Supported targets
 
 * for PXT/microbit
