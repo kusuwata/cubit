@@ -1,6 +1,7 @@
 {
     "name": "cubit",
     "version": "0.0.22",
+     "icon": "https://raw.githubusercontent.com/kusuwata/cubit/master/icon.png",
     "description": "Cubit base library",
     "dependencies": {
         "core": "*",
