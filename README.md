@@ -2,7 +2,7 @@
 
 This is a library that is the foundation for operating the product "Cubit" optimized for micro:bit.
 
-<img src= "https://raw.githubusercontent.com/kusuwata/cubit/cubit.jpg" alt="image" width="320" height="290" >
+<img src= "https://raw.githubusercontent.com/kusuwata/cubit/master/cubit.jpg" alt="image" width="320" height="290" >
 
 
 
