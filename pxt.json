@@ -1,7 +1,7 @@
 {
     "name": "cubit",
     "version": "0.0.27",
-    "description": "Cubit base library",
+    "description": "Cubitに搭載された機能をこのライブラリを導入することによって使用できるようになります。",
     "dependencies": {
         "core": "*"
     },
