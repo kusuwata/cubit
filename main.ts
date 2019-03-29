@@ -22,7 +22,7 @@ enum AIN_Port {
     //% block="A5"
     A5 = 5
 }
-enum D_Port {
+enum DIN_Port {
     //% block="D1"
     D1 = 1,
     //% block="D2"
@@ -213,14 +213,13 @@ namespace Cubit {
        * デジタル入出力ポートを選択します
        */
 
-    //% blockId=DigitalPort block="デジタル入出力ポート　ポート %Port""
+    //% blockId=DigitalPort block="デジタル入力ポート　ポート %Port""
     //% inlineInputMode=inline
     //% weight=5
-    export function DigitalPort(Port: D_Port) {
+    export function DigitalPort(Port: DIN_Port) {
         switch (Port) {
             case 1:
                 return pins.P6
-
                 break
             case 2:
                 return pins.P7
@@ -233,7 +232,6 @@ namespace Cubit {
                 break
             case 4:
                 return pins.P9
-
                 break
             case 5:
                 return pins.P16
