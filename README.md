@@ -1,7 +1,7 @@
 # Cubit
 このライブラリは、Cubitの機能を最大限活用するための基礎になるものです。
 
-        <img src="https://github.com/kusuwata/cubit/blob/master/cubit.jpg?raw=true">
+
 
 
 ## 各種ブロックの説明
