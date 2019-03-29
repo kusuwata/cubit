@@ -1,12 +1,13 @@
 {
     "name": "cubit",
     "version": "0.0.24",
-    "icon": "https://raw.githubusercontent.com/kusuwata/cubit/master/icon.png",
+   
     "description": "Cubit base library",
     "dependencies": {
         "core": "*",
         "radio": "*"
     },
+    "icon": "https://raw.githubusercontent.com/kusuwata/cubit/master/icon.png",
     "files": [
         "README.md",
         "main.ts"
