@@ -1,6 +1,6 @@
 {
     "name": "cubit",
-    "version": "0.0.0",
+    "version": "0.0.2",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -14,6 +14,5 @@
         "test.ts"
     ],
     "public": true,
-    "additionalFilePaths": []
-
+    "installedVersion": "workspace:b34e2e22-412b-413f-7bfb-4fabfc80c70d"
 }
