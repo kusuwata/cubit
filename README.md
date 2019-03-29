@@ -1,8 +1,13 @@
-# cubit
+
+## Cubit
+
+This library is the basis for operating Cubit functions.
 
 
 ## License
 
+
+The license for this library belongs to HrepTech Inc.
 
 
 ## Supported targets
