@@ -1,6 +1,8 @@
 {
     "name": "cubit",
+
     "version": "0.0.20",
+
     "description": "",
     "dependencies": {
         "core": "*",
@@ -16,5 +18,7 @@
         "test.ts"
     ],
     "public": true,
-    "installedVersion": "github:kusuwata/cubit#v0.0.19"
+
+    "installedVersion": "github:kusuwata/cubit#v0.0.20"
+
 }
