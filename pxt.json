@@ -6,7 +6,7 @@
         "core": "*",
         "radio": "*"
     },
-    "icon": "https://raw.githubusercontent.com/kusuwata/cubit/master/icon.png",
+    "icon": "https://raw.github.com/kusuwata/cubit/master/icon.png",
     "files": [
         "README.md",
         "main.ts"
