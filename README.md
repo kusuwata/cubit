@@ -15,4 +15,6 @@ This is a library that is the foundation for operating the product "Cubit" optim
 * for PXT/microbit
 (The metadata above is needed for package search.)
 
-
+```package
+cubit=github:kusuwata/cubit
+```
