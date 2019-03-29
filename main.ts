@@ -240,8 +240,7 @@ namespace Cubit {
 
                 break
         }
-        return "Error"
-
+        return pins.P6
     }
 
 
