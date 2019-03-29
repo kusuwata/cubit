@@ -182,28 +182,28 @@ namespace Cubit {
     export function AnalogPort(Port: AIN_Port) {
         switch (Port) {
             case 1:
-                return pins.analogReadPin(AnalogPin.P3)
+                return pins.P3
 
                 break
             case 2:
-                return pins.analogReadPin(AnalogPin.P0)
+                return pins.P0
 
                 break
 
 
             case 3:
-                return pins.analogReadPin(AnalogPin.P4)
+                return pins.P4
 
                 break
             case 4:
-                return pins.analogReadPin(AnalogPin.P1)
+                return pins.P1
 
                 break
             case 5:
-                return pins.analogReadPin(AnalogPin.P2)
+                return pins.P2
                 break
         }
-        return pins.analogReadPin(AnalogPin.P3)
+        return pins.P3
 
     }
 
