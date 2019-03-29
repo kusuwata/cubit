@@ -10,6 +10,7 @@ enum motor_Port {
 
 }
 
+
 enum AIN_Port {
     //% block="A1"
     A1 = 1,
@@ -182,7 +183,7 @@ namespace Cubit {
     export function AnalogPort(Port: AIN_Port) {
         switch (Port) {
             case 1:
-                return  AnalogPin.P3
+                return AnalogPin.P3
 
                 break
             case 2:
