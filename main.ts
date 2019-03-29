@@ -204,7 +204,7 @@ namespace Cubit {
 
                 break
         }
-        return "Error"
+        return AnalogPin.P3
 
     }
 
