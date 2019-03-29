@@ -15,6 +15,6 @@
     ],
     "public": true,
     "additionalFilePaths": []
-    pxt bump [--update] [--upload] 
 
 }
+    pxt bump [--update] [--upload] 
