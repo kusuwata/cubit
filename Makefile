@@ -2,8 +2,7 @@ all: deploy
 
 build:
 	pxt build
-	
- pxt bump [--update] [--upload]
+
 
 
 deploy:
