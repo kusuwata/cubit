@@ -3,8 +3,7 @@
     "version": "0.0.26",
     "description": "Cubit base library",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "icon": "https://raw.github.com/kusuwata/cubit/master/icon.png",
     "files": [
