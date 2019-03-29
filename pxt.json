@@ -9,8 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "icon.png",
-         "cubit.jpg"
+        "icon.png"
     ],
     "testFiles": [
         "test.ts"
