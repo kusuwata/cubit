@@ -1,11 +1,19 @@
 # Cubit
+このライブラリは、Cubitの機能を最大限活用するための基礎になるものです。
 
-This is a library that is the foundation for operating the product "Cubit" optimized for micro:bit.
+## 各種ブロックの説明
 
-<img src= "https://raw.githubusercontent.com/kusuwata/cubit/master/cubit.jpg" alt="image" width="320" height="290" >
+* Cubit設定
 
+```blocks
+Cubit.cubit_setup() 
+```
 
+## Cubit設定
 
+```blocks
+Cubit.cubit_setup() 
+```
 
 ## Supported targets
 
