@@ -182,28 +182,28 @@ namespace Cubit {
     export function AnalogPort(Port: AIN_Port) {
         switch (Port) {
             case 1:
-                return pins.P3
+                return  AnalogPin.P3
 
                 break
             case 2:
-                return pins.P0
+                return AnalogPin.P0
 
                 break
 
 
             case 3:
-                return pins.P4
+                return AnalogPin.P4
 
                 break
             case 4:
-                return pins.P1
+                return AnalogPin.P1
 
                 break
             case 5:
-                return pins.P2
+                return AnalogPin.P2
                 break
         }
-        return pins.P3
+        return AnalogPin.P3
 
     }
 
@@ -219,26 +219,26 @@ namespace Cubit {
     export function DigitalPort(Port: DIN_Port) {
         switch (Port) {
             case 1:
-                return pins.P6
+                return DigitalPin.P6
                 break
             case 2:
-                return pins.P7
+                return DigitalPin.P7
 
                 break
 
             case 3:
-                return pins.P8
+                return DigitalPin.P8
 
                 break
             case 4:
-                return pins.P9
+                return DigitalPin.P9
                 break
             case 5:
-                return pins.P16
+                return DigitalPin.P16
 
                 break
         }
-        return pins.P6
+        return DigitalPin.P6
     }
 
 
