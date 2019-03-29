@@ -219,24 +219,24 @@ namespace Cubit {
     export function DigitalPort(Port: D_Port) {
         switch (Port) {
             case 1:
-                return DigitalPin.P6
+                return pins.P6
 
                 break
             case 2:
-                return DigitalPin.P7
+                return pins.P7
 
                 break
 
             case 3:
-                return DigitalPin.P8
+                return pins.P8
 
                 break
             case 4:
-                return DigitalPin.P9
+                return pins.P9
 
                 break
             case 5:
-                return DigitalPin.P16
+                return pins.P16
 
                 break
         }
