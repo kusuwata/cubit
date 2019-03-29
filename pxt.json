@@ -10,8 +10,8 @@
     },
     "files": [
         "README.md",
-        "icon.png"
-        "main.ts",
+        "icon.png",
+        "main.ts"
    
     ],
     "testFiles": [
