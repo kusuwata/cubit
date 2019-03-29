@@ -203,7 +203,7 @@ namespace Cubit {
                 return pins.analogReadPin(AnalogPin.P2)
                 break
         }
-        return AnalogPin.P3
+        return pins.analogReadPin(AnalogPin.P3)
 
     }
 
