@@ -1,24 +1,18 @@
 {
     "name": "cubit",
-
     "version": "0.0.20",
-
-    "description": "",
+    "description": "Cubit base library",
     "dependencies": {
         "core": "*",
         "radio": "*"
     },
     "files": [
         "README.md",
-        "icon.png",
         "main.ts"
-   
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-
     "installedVersion": "github:kusuwata/cubit#v0.0.20"
-
 }
