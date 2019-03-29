@@ -1,6 +1,6 @@
 {
     "name": "cubit",
-    "version": "0.0.21",
+    "version": "0.0.22",
     "description": "Cubit base library",
     "dependencies": {
         "core": "*",
