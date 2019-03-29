@@ -243,6 +243,7 @@ namespace Cubit {
 
 
 
+
     function MotorDriverA() {
         if (AM < 0) {
             AP = Math.abs(AM)
