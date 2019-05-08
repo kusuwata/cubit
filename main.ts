@@ -63,7 +63,7 @@ namespace Cubit {
 
     let Power = 0
     let Direction: string[] = []
-    Direction =["<","/",">"]  
+    Direction = ["<", "/", ">"]
 
     let AM = 1
     let BM = 1
@@ -243,7 +243,7 @@ namespace Cubit {
 
     function MotorDriverA() {
         serial.writeString("a")
-    
+
         if (AM < 0) {
             Power = Math.abs(AM)
             Direction[0]
