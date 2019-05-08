@@ -255,7 +255,7 @@ namespace Cubit {
             AD = 1
             AP = Math.abs(AM)
         }
-        serial.writeString(“a”)
+        serial.writeString("a")
         serial.writeNumber(AD)
         serial.writeString("D")
         serial.writeNumber(AP)
@@ -272,7 +272,7 @@ namespace Cubit {
             BD = 1
             BP = Math.abs(BM)
         }
-        serial.writeString(“b”)
+        serial.writeString("b")
         serial.writeNumber(BD)
         serial.writeString("D")
         serial.writeNumber(BP)
@@ -289,7 +289,7 @@ namespace Cubit {
             CD = 1
             CP = Math.abs(CM)
         }
-        serial.writeString(“c”)
+        serial.writeString("c")
         serial.writeNumber(CD)
         serial.writeString("D")
         serial.writeNumber(CP)
@@ -307,7 +307,7 @@ namespace Cubit {
             DD = 1
             DP = Math.abs(DM)
         }
-        serial.writeString(“d”)
+        serial.writeString("d")
         serial.writeNumber(DD)
         serial.writeString("D")
         serial.writeNumber(DP)
