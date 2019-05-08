@@ -123,7 +123,7 @@ namespace Cubit {
         serial.redirect(
             SerialPin.P0,
             SerialPin.P1,
-            BaudRate.BaudRate115200
+            BaudRate.BaudRate19200
         )
 
     }
@@ -317,4 +317,4 @@ namespace Cubit {
 
 }
 
-    
+
