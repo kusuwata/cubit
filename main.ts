@@ -61,18 +61,15 @@ enum Header {
 //% weight=1000 color=#0fbc11 icon="❑"
 namespace Cubit {
 
-    let DM = 1
-    let CM = 1
-    let BM = 1
-    let DD = 1
-    let DP = 1
-    let CD = 1
-    let CP = 1
-    let BD = 1
-    let BP = 1
-    let AD = 1
-    let AP = 1
+    let Power = 0
+    let Direction: string[] = []
+    Direction =["<","/",">"]  
+
     let AM = 1
+    let BM = 1
+    let CM = 1
+    let DM = 1
+
     let AR = 1
     let BR = 1
     let CR = 1
@@ -245,76 +242,74 @@ namespace Cubit {
 
 
     function MotorDriverA() {
-        if (AM < 0) {
-            AP = Math.abs(AM)
-            AD = 2
-        } else if (AM == 0) {
-            AP = 0
-            AD = 0
-        } else {
-            AD = 1
-            AP = Math.abs(AM)
-        }
         serial.writeString("a")
-        serial.writeNumber(AD)
+    
+        if (AM < 0) {
+            Power = Math.abs(AM)
+            Direction[0]
+        } else if (AM == 0) {
+            Power = 0
+            Direction[1]
+        } else {
+            Power = Math.abs(AM)
+            Direction[2]
+        }
         serial.writeString("D")
-        serial.writeNumber(AP)
+        serial.writeNumber(Power)
         serial.writeString("P")
     }
+
     function MotorDriverB() {
-        if (BM < 0) {
-            BP = Math.abs(BM)
-            BD = 2
-        } else if (BM == 0) {
-            BP = 0
-            BD = 0
-        } else {
-            BD = 1
-            BP = Math.abs(BM)
-        }
         serial.writeString("b")
-        serial.writeNumber(BD)
+
+        if (BM < 0) {
+            Power = Math.abs(BM)
+            Direction[0]
+        } else if (BM == 0) {
+            Power = 0
+            Direction[1]
+        } else {
+            Power = Math.abs(BM)
+            Direction[2]
+        }
         serial.writeString("D")
-        serial.writeNumber(BP)
+        serial.writeNumber(Power)
         serial.writeString("P")
     }
+
     function MotorDriverC() {
-        if (CM < 0) {
-            CP = Math.abs(CM)
-            CD = 2
-        } else if (CM == 0) {
-            CP = 0
-            CD = 0
-        } else {
-            CD = 1
-            CP = Math.abs(CM)
-        }
         serial.writeString("c")
-        serial.writeNumber(CD)
+
+        if (CM < 0) {
+            Power = Math.abs(CM)
+            Direction[0]
+        } else if (CM == 0) {
+            Power = 0
+            Direction[1]
+        } else {
+            Power = Math.abs(CM)
+            Direction[2]
+        }
         serial.writeString("D")
-        serial.writeNumber(CP)
+        serial.writeNumber(Power)
         serial.writeString("P")
     }
 
     function MotorDriverD() {
-        if (DD < 0) {
-            DP = Math.abs(DM)
-            DD = 2
-        } else if (DM == 0) {
-            DP = 0
-            DD = 0
-        } else {
-            DD = 1
-            DP = Math.abs(DM)
-        }
         serial.writeString("d")
-        serial.writeNumber(DD)
+
+        if (DM < 0) {
+            Power = Math.abs(DM)
+            Direction[0]
+        } else if (DM == 0) {
+            Power = 0
+            Direction[1]
+        } else {
+            Power = Math.abs(DM)
+            Direction[2]
+        }
         serial.writeString("D")
-        serial.writeNumber(DP)
+        serial.writeNumber(Power)
         serial.writeString("P")
-
     }
-
 }
-
-
