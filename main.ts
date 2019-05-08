@@ -279,7 +279,6 @@ namespace Cubit {
 
     function MotorDriverC() {
         serial.writeString("c")
-
         if (CM < 0) {
             Power = Math.abs(CM)
             Direction[0]
