@@ -1,5 +1,5 @@
 enum motor_Port {
-    //% block="A"
+    //% block="A" 
     A = 1,
     //% block="B"
     B = 2,
