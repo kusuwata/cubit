@@ -63,7 +63,7 @@ namespace Cubit {
 
     let Power = 0
     let Direction: string[] = []
-    Direction = ["L", "S", "R"]
+    Direction = ["l", "s", "r"]
 
     let AM = 1
     let BM = 1
