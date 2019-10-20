@@ -1,11 +1,11 @@
 {
     "name": "cubit",
-    "version": "0.0.6",
-    "description": "",
+    "version": "0.1.4",
+    "description": "Cubitに搭載された機能をこのライブラリを導入することによって使用できるようになります。",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
+    "icon": "https://static.wixstatic.com/media/fa38f8_92c2f288afc049b0ab2590cebfeacc83~mv2.png",
     "files": [
         "README.md",
         "main.ts"
@@ -14,5 +14,5 @@
         "test.ts"
     ],
     "public": true,
-    "installedVersion": "workspace:b34e2e22-412b-413f-7bfb-4fabfc80c70d"
+    "installedVersion": "workspace:2e2f647a-708f-4e6b-2301-d7c1e9ff24c3"
 }

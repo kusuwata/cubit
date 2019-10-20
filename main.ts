@@ -1,5 +1,5 @@
 enum motor_Port {
-    //% block="A"
+    //% block="A" 
     A = 1,
     //% block="B"
     B = 2,
@@ -22,7 +22,7 @@ enum AIN_Port {
     //% block="A5"
     A5 = 5
 }
-enum D_Port {
+enum DIN_Port {
     //% block="D1"
     D1 = 1,
     //% block="D2"
@@ -61,18 +61,15 @@ enum Header {
 //% weight=1000 color=#0fbc11 icon="❑"
 namespace Cubit {
 
-    let DM = 1
-    let CM = 1
-    let BM = 1
-    let DD = 1
-    let DP = 1
-    let CD = 1
-    let CP = 1
-    let BD = 1
-    let BP = 1
-    let AD = 1
-    let AP = 1
+    let Power = 0
+    let Direction: string[] = []
+    Direction = ["l", "s", "r"]
+
     let AM = 1
+    let BM = 1
+    let CM = 1
+    let DM = 1
+
     let AR = 1
     let BR = 1
     let CR = 1
@@ -123,7 +120,7 @@ namespace Cubit {
         serial.redirect(
             SerialPin.P0,
             SerialPin.P1,
-            BaudRate.BaudRate115200
+            BaudRate.BaudRate19200
         )
 
     }
@@ -201,10 +198,9 @@ namespace Cubit {
                 break
             case 5:
                 return AnalogPin.P2
-
                 break
         }
-        return "Error"
+        return AnalogPin.P3
 
     }
 
@@ -214,14 +210,13 @@ namespace Cubit {
        * デジタル入出力ポートを選択します
        */
 
-    //% blockId=DigitalPort block="デジタル入出力ポート　ポート %Port""
+    //% blockId=DigitalPort block="デジタル入力ポート　ポート %Port""
     //% inlineInputMode=inline
     //% weight=5
-    export function DigitalPort(Port: D_Port) {
+    export function DigitalPort(Port: DIN_Port) {
         switch (Port) {
             case 1:
                 return DigitalPin.P6
-
                 break
             case 2:
                 return DigitalPin.P7
@@ -234,88 +229,86 @@ namespace Cubit {
                 break
             case 4:
                 return DigitalPin.P9
-
                 break
             case 5:
                 return DigitalPin.P16
 
                 break
         }
-        return "Error"
-
+        return DigitalPin.P6
     }
+
 
 
 
     function MotorDriverA() {
+        serial.writeString("a")
+
         if (AM < 0) {
-            AP = Math.abs(AM)
-            AD = 2
+            Power = Math.abs(AM)
+            Direction[0]
         } else if (AM == 0) {
-            AP = 0
-            AD = 0
+            Power = 0
+            Direction[1]
         } else {
-            AD = 1
-            AP = Math.abs(AM)
+            Power = Math.abs(AM)
+            Direction[2]
         }
-        serial.writeString("A")
-        serial.writeNumber(AD)
         serial.writeString("D")
-        serial.writeNumber(AP)
+        serial.writeNumber(Power)
         serial.writeString("P")
     }
+
     function MotorDriverB() {
+        serial.writeString("b")
+
         if (BM < 0) {
-            BP = Math.abs(BM)
-            BD = 2
+            Power = Math.abs(BM)
+            Direction[0]
         } else if (BM == 0) {
-            BP = 0
-            BD = 0
+            Power = 0
+            Direction[1]
         } else {
-            BD = 1
-            BP = Math.abs(BM)
+            Power = Math.abs(BM)
+            Direction[2]
         }
-        serial.writeString("B")
-        serial.writeNumber(BD)
         serial.writeString("D")
-        serial.writeNumber(BP)
+        serial.writeNumber(Power)
         serial.writeString("P")
     }
+
     function MotorDriverC() {
+        serial.writeString("c")
         if (CM < 0) {
-            CP = Math.abs(CM)
-            CD = 2
+            Power = Math.abs(CM)
+            Direction[0]
         } else if (CM == 0) {
-            CP = 0
-            CD = 0
+            Power = 0
+            Direction[1]
         } else {
-            CD = 1
-            CP = Math.abs(CM)
+            Power = Math.abs(CM)
+            Direction[2]
         }
-        serial.writeString("C")
-        serial.writeNumber(CD)
         serial.writeString("D")
-        serial.writeNumber(CP)
+        serial.writeNumber(Power)
         serial.writeString("P")
     }
 
     function MotorDriverD() {
-        if (DD < 0) {
-            DP = Math.abs(DM)
-            DD = 2
+        serial.writeString("d")
+
+        if (DM < 0) {
+            Power = Math.abs(DM)
+            Direction[0]
         } else if (DM == 0) {
-            DP = 0
-            DD = 0
+            Power = 0
+            Direction[1]
         } else {
-            DD = 1
-            DP = Math.abs(DM)
+            Power = Math.abs(DM)
+            Direction[2]
         }
         serial.writeString("D")
-        serial.writeNumber(DD)
-        serial.writeString("D")
-        serial.writeNumber(DP)
+        serial.writeNumber(Power)
         serial.writeString("P")
-
     }
-
 }
